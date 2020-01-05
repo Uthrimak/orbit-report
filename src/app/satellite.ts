@@ -11,4 +11,11 @@ export class Satellite {
         this.launchDate = launchDate;
         this.orbitType = orbitType;
     }
+    shouldShowWarning(){
+        if(this.type === 'Space Debris'){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
